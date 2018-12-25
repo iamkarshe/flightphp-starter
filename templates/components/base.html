@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} - Website</title>
+  </head>
+  <body>
+    {{ include('components/header.html') }}
+    <div id="content">
+      {% block content %}{% endblock %}
+    </div>
+    {{ include('components/footer.html') }}
+  </body>
+</html>

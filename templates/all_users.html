@@ -1,0 +1,28 @@
+{% extends "components/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+      <h1>All Users</h1>
+      <p>List of all users</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for user in users %}
+            <tr>
+              <td>{{user['name']|e}}</td>
+              <td>{{user['email']|e}}</td>
+            </tr>
+          {% endfor %}    
+        </tbody>
+      </table>
+      
+{% endblock %}

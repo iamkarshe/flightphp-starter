@@ -1,5 +1,6 @@
 vendor/
 node_modules/
+render_cache/
 npm-debug.log
 
 # Laravel 4 specific
