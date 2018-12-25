@@ -16,4 +16,7 @@ We are running on ***PHP 7.x*** and ***MySQL and SQLite*** databases using ORM.
 - *Valitron* - for payload validation
 - *RedBeanPHP* - for database access
 
-### How to start with this package
+### How to use this package
+- Verify your machine have PHP (PHP 7.X and above recommended)
+- Get and update Composer requirements using `$ composer update`
+- Start server with root folder using command `$ php -S localhost:8000` and open `http://localhost:8000` in browser to access bootstrap code
