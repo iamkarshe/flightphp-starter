@@ -1,6 +1,6 @@
 <?php 
   require 'vendor/autoload.php';
-  include_once 'inc.php';
+  include_once 'config.php';
 
   Flight::route('/', function(){
     $vars = [

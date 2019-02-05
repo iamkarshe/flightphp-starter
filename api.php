@@ -12,6 +12,7 @@
     ]);
   });
 
+  // Get all users
   Flight::route('/api/all_users', function(){
     $users = array();
     $allUsers = R::findAll('users');
@@ -22,6 +23,20 @@
 
     echo Flight::json([
       'users' => $users,
+    ]);
+  });
+
+
+  // Get user with ID
+  Flight::route('/api/get_user/@id', function($id){
+    $user = array();
+    $objUser = R::find('users', 'id = ?', [$id]);
+
+    foreach ($objUser as $userID => $user) {}
+
+    echo Flight::json([
+      'user' => $user,
+      'id' => $id,
     ]);
   });
 

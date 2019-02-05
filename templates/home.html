@@ -4,21 +4,25 @@
 
 {% block content %}
 
-      <h1>Home</h1>
-      <p>
-        App Name : <b>{{appName}}</b>
-      </p>
-      <p>
-        App Version : <b>{{appVersion}}</b>
-      </p>
-
-      <ul>
-        <li>
-          <a href="/all_users">All Users (View)</a>
-        </li>
-        <li>
-          <a href="/api/all_users">All Users (API)</a>
-        </li>
-      </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="jumbotron">
+              <h3>Simple PHP starter app pack.</h3>
+              
+              
+              <ul class="list-inline">
+                <li>
+                  <a href="/all_users">All Users (View)</a>
+                </li>
+                <li>
+                  <a href="/api/all_users">All Users (API)</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
       
 {% endblock %}
